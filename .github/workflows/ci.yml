@@ -22,4 +22,4 @@ jobs:
         run: echo "This is step 2"
 
       - name: pipeline break
-        exit 1
+        run: echo "pipeline is fixed"
