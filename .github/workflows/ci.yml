@@ -25,7 +25,7 @@ jobs:
         run: echo "pipeline is fixed"
 
 
-      on:
+on:
   push:
     branches: ["main"]
   pull_request:
