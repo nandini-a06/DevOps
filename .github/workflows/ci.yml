@@ -3,17 +3,19 @@ name: Simple CI pipeline
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repository 
+        uses: actions/checkout@v3 
 
-      - name: Run a simple command
-        run: echo "This is devops class"
+      - name: Run a simple command 
+        run: echo "This is devops class" 
 
       - name: step1
         run: echo "This is step 1"
@@ -25,14 +27,5 @@ jobs:
         run: echo "pipeline is fixed"
 
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 
-
-
-        
-      
